@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 16px;
+}
+
+.main-card {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: auto;
+    background-color: rgb(255, 245, 247);
+    box-shadow: -1px 10px 42px -9px rgba(0,0,0,0.75);
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.left-card {
+    display: flex;
+    flex-direction: column;  
+    padding: 30px 70px ; 
+}
+
+.sub-section {
+    display: flex;
+    align-items: center;
+}
+
+.sub-section .circle {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ffc0cb;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.sub-section h6 {
+    font-weight: 600 
+}
+
+.left-section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 40px;
+    letter-spacing: 7px;
+}
+
+.left-section h3 span {
+    color: rgb(167, 103, 114);
+}
+
+.text {
+    color: rgb(223, 174, 184);
+    margin: 15px 0;
+}
+
+.email-input {
+    position: relative;
+}
+
+input[type='text'] {
+    padding: 6px 100px 6px 6px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.error-icon {
+    width: 15px;
+    position: absolute;
+    top: 23%;
+    right: 40%;
+}
+
+.btn {
+    width: 50px;
+    border-radius: 20px;
+    padding: 5px 0;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+    border: none;
+    position: absolute;
+    right: 70px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:focus {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 88%), hsl(0, 70%, 82%));
+}
+
+.btn img {
+    width: 7px;
+}
+
+.error-text {
+    font-size: 0.7rem;
+    position: absolute;
+    left: 15px; 
+    top: 31px;
+    color:hsl(0, 51%, 65%);
+}
+
+.right-section img {
+    width: 300px;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
